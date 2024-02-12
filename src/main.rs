@@ -7,7 +7,7 @@ fn main() {
     let probes = lister.list_all();
 
     // Use the first probe found.
-    let mut probe = probes[0].open(&lister).unwrap();
+    let probe = probes[0].open(&lister).unwrap();
 
     // Attach to a chip.
     let mut session = probe
